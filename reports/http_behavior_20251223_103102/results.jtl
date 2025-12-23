@@ -1,0 +1,121 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1766503870255,1135,Auth,200,OK,Principal 1-1,text,true,,2860,261,5,5,https://dummyjson.com/auth/login,1124,0,889
+1766503870351,1310,Auth,200,OK,Principal 1-2,text,true,,2858,261,5,5,https://dummyjson.com/auth/login,1306,0,791
+1766503870679,983,Auth,200,OK,Principal 1-3,text,true,,2850,261,5,5,https://dummyjson.com/auth/login,980,0,461
+1766503871014,677,Auth,200,OK,Principal 1-4,text,true,,2852,261,6,6,https://dummyjson.com/auth/login,675,0,169
+1766503871340,398,Auth,200,OK,Principal 1-5,text,true,,2854,261,6,6,https://dummyjson.com/auth/login,395,0,178
+1766503871665,394,Get current auth user,200,OK,Principal 1-2,text,true,,2441,527,7,7,https://dummyjson.com/auth/me,389,0,166
+1766503871511,548,Get current auth user,200,OK,Principal 1-1,text,true,,2441,527,7,7,https://dummyjson.com/auth/me,543,0,366
+1766503871674,403,Auth,200,OK,Principal 1-6,text,true,,2862,261,7,7,https://dummyjson.com/auth/login,401,0,181
+1766503871745,369,Get current auth user,200,OK,Principal 1-5,text,true,,2431,527,7,7,https://dummyjson.com/auth/me,367,0,152
+1766503871669,560,Get current auth user,200,OK,Principal 1-3,text,true,,2445,527,7,7,https://dummyjson.com/auth/me,558,0,348
+1766503871693,578,Get current auth user,200,OK,Principal 1-4,text,true,,2437,527,7,7,https://dummyjson.com/auth/me,575,0,352
+1766503872005,404,Auth,200,OK,Principal 1-7,text,true,,2852,261,8,8,https://dummyjson.com/auth/login,399,0,181
+1766503872063,406,Limit and skip products,200,OK,Principal 1-1,text,true,,1587,571,8,8,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,405,0,188
+1766503872082,433,Get current auth user,200,OK,Principal 1-6,text,true,,2449,527,8,8,https://dummyjson.com/auth/me,430,0,201
+1766503872231,380,Limit and skip products,200,OK,Principal 1-3,text,true,,1581,571,8,8,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,378,0,154
+1766503872116,524,Limit and skip products,200,OK,Principal 1-5,text,true,,1595,571,8,8,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,520,0,340
+1766503872273,385,Limit and skip products,200,OK,Principal 1-4,text,true,,1587,571,8,8,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,381,0,160
+1766503872348,409,Auth,200,OK,Principal 1-8,text,true,,2862,261,9,9,https://dummyjson.com/auth/login,407,0,189
+1766503872412,381,Get current auth user,200,OK,Principal 1-7,text,true,,2443,527,9,9,https://dummyjson.com/auth/me,376,0,158
+1766503872063,740,Limit and skip products,200,OK,Principal 1-2,text,true,,1587,571,9,9,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,738,0,238
+1766503872517,409,Limit and skip products,200,OK,Principal 1-6,text,true,,1585,571,9,9,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,407,0,188
+1766503872471,514,Add a new product,201,Created,Principal 1-1,text,true,,1048,611,9,9,https://dummyjson.com/auth/products/add,513,0,335
+1766503872614,417,Add a new product,201,Created,Principal 1-3,text,true,,1051,611,10,10,https://dummyjson.com/auth/products/add,415,0,197
+1766503872643,389,Add a new product,201,Created,Principal 1-5,text,true,,1039,611,10,10,https://dummyjson.com/auth/products/add,388,0,169
+1766503872665,367,Add a new product,201,Created,Principal 1-4,text,true,,1045,611,10,10,https://dummyjson.com/auth/products/add,366,0,151
+1766503872680,442,Auth,200,OK,Principal 1-9,text,true,,2854,261,10,10,https://dummyjson.com/auth/login,441,0,214
+1766503872804,369,Add a new product,201,Created,Principal 1-2,text,true,,1047,611,10,10,https://dummyjson.com/auth/products/add,368,0,154
+1766503872760,452,Get current auth user,200,OK,Principal 1-8,text,true,,2442,527,10,10,https://dummyjson.com/auth/me,451,0,283
+1766503872804,540,Limit and skip products,200,OK,Principal 1-7,text,true,,1587,571,10,10,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,538,0,325
+1766503873008,372,Auth,200,OK,Principal 1-10,text,true,,2858,261,11,11,https://dummyjson.com/auth/login,371,0,154
+1766503872987,388,Get All Products,200,OK,Principal 1-1,text,true,,45114,533,11,11,https://dummyjson.com/auth/products,371,0,148
+1766503873034,365,Get All Products,200,OK,Principal 1-4,text,true,,45108,533,11,11,https://dummyjson.com/auth/products,359,0,142
+1766503872928,482,Add a new product,201,Created,Principal 1-6,text,true,,1043,611,11,11,https://dummyjson.com/auth/products/add,481,0,316
+1766503873033,429,Get All Products,200,OK,Principal 1-5,text,true,,45108,533,11,11,https://dummyjson.com/auth/products,412,0,190
+1766503873032,477,Get All Products,200,OK,Principal 1-3,text,true,,45106,533,11,11,https://dummyjson.com/auth/products,471,0,152
+1766503873175,373,Get All Products,200,OK,Principal 1-2,text,true,,45110,533,11,11,https://dummyjson.com/auth/products,360,0,139
+1766503873124,456,Get current auth user,200,OK,Principal 1-9,text,true,,2445,527,11,11,https://dummyjson.com/auth/me,443,0,225
+1766503873213,364,Limit and skip products,200,OK,Principal 1-8,text,true,,1593,571,11,11,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,363,0,147
+1766503873347,362,Auth,200,OK,Principal 1-11,text,true,,2862,261,12,12,https://dummyjson.com/auth/login,359,0,147
+1766503873347,465,Add a new product,201,Created,Principal 1-7,text,true,,1045,611,12,12,https://dummyjson.com/auth/products/add,464,0,248
+1766503873381,448,Get current auth user,200,OK,Principal 1-10,text,true,,2443,527,12,12,https://dummyjson.com/auth/me,446,0,221
+1766503873388,441,Update a product,200,OK,Principal 1-1,text,true,,1661,610,12,12,https://dummyjson.com/auth/products/9,440,0,212
+1766503873406,526,Update a product,200,OK,Principal 1-4,text,true,,1697,611,12,12,https://dummyjson.com/auth/products/15,524,0,360
+1766503873513,430,Update a product,200,OK,Principal 1-3,text,true,,1414,611,12,12,https://dummyjson.com/auth/products/27,428,0,209
+1766503873561,408,Update a product,200,OK,Principal 1-2,text,true,,1493,610,12,12,https://dummyjson.com/auth/products/5,407,0,191
+1766503873582,394,Add a new product,201,Created,Principal 1-8,text,true,,1041,611,12,12,https://dummyjson.com/auth/products/add,393,0,173
+1766503873473,510,Update a product,200,OK,Principal 1-5,text,true,,1655,610,12,12,https://dummyjson.com/auth/products/6,509,0,332
+1766503873686,418,Auth,200,OK,Principal 1-12,text,true,,2864,261,13,13,https://dummyjson.com/auth/login,417,0,187
+1766503873711,393,Get current auth user,200,OK,Principal 1-11,text,true,,2439,527,13,13,https://dummyjson.com/auth/me,372,0,157
+1766503873412,670,Get All Products,200,OK,Principal 1-6,text,true,,45109,533,13,13,https://dummyjson.com/auth/products,522,0,351
+1766503873596,521,Limit and skip products,200,OK,Principal 1-9,text,true,,1590,571,13,13,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,520,0,349
+1766503873831,369,Limit and skip products,200,OK,Principal 1-10,text,true,,1581,571,13,13,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,366,0,149
+1766503873831,405,Update a product partial,200,OK,Principal 1-1,text,true,,1679,582,13,13,https://dummyjson.com/auth/products/9,404,0,187
+1766503873814,457,Get All Products,200,OK,Principal 1-7,text,true,,45112,533,13,13,https://dummyjson.com/auth/products,440,0,210
+1766503873945,377,Update a product partial,200,OK,Principal 1-3,text,true,,1403,583,13,13,https://dummyjson.com/auth/products/27,376,0,164
+1766503873936,409,Update a product partial,200,OK,Principal 1-4,text,true,,1727,583,13,13,https://dummyjson.com/auth/products/15,408,0,187
+1766503873977,365,Get All Products,200,OK,Principal 1-8,text,true,,45108,533,13,13,https://dummyjson.com/auth/products,360,0,142
+1766503873984,369,Update a product partial,200,OK,Principal 1-5,text,true,,1663,582,14,14,https://dummyjson.com/auth/products/6,368,0,153
+1766503873971,407,Update a product partial,200,OK,Principal 1-2,text,true,,1498,582,14,14,https://dummyjson.com/auth/products/5,406,0,188
+1766503874000,479,Auth,200,OK,Principal 1-13,text,true,,2860,261,14,14,https://dummyjson.com/auth/login,478,0,320
+1766503874105,403,Get current auth user,200,OK,Principal 1-12,text,true,,2443,527,14,14,https://dummyjson.com/auth/me,401,0,184
+1766503874109,414,Update a product,200,OK,Principal 1-6,text,true,,1373,611,14,14,https://dummyjson.com/auth/products/23,412,0,196
+1766503874107,417,Limit and skip products,200,OK,Principal 1-11,text,true,,1591,571,14,14,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,416,0,197
+1766503874119,408,Add a new product,201,Created,Principal 1-9,text,true,,1045,611,14,14,https://dummyjson.com/auth/products/add,406,0,187
+1766503874202,401,Add a new product,201,Created,Principal 1-10,text,true,,1047,611,14,14,https://dummyjson.com/auth/products/add,400,0,184
+1766503874238,385,Delete a product,200,OK,Principal 1-1,text,true,,2706,557,14,14,https://dummyjson.com/auth/products/9,383,0,170
+1766503874275,394,Update a product,200,OK,Principal 1-7,text,true,,1493,610,13,13,https://dummyjson.com/auth/products/5,392,0,175
+1766503874323,362,Delete a product,200,OK,Principal 1-3,text,true,,2442,558,14,14,https://dummyjson.com/auth/products/27,360,0,144
+1766503874348,350,Auth,200,OK,Principal 1-14,text,true,,2868,261,13,13,https://dummyjson.com/auth/login,348,0,137
+1766503874349,360,Update a product,200,OK,Principal 1-8,text,true,,1491,610,13,13,https://dummyjson.com/auth/products/5,358,0,142
+1766503874354,358,Delete a product,200,OK,Principal 1-5,text,true,,2672,557,13,13,https://dummyjson.com/auth/products/6,356,0,139
+1766503874346,372,Delete a product,200,OK,Principal 1-4,text,true,,2738,558,12,12,https://dummyjson.com/auth/products/15,370,0,151
+1766503874381,403,Delete a product,200,OK,Principal 1-2,text,true,,2512,557,11,11,https://dummyjson.com/auth/products/5,401,0,182
+1766503874509,359,Limit and skip products,200,OK,Principal 1-12,text,true,,1581,571,10,10,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,358,0,143
+1766503874481,405,Get current auth user,200,OK,Principal 1-13,text,true,,2439,527,10,10,https://dummyjson.com/auth/me,403,0,183
+1766503874524,368,Update a product partial,200,OK,Principal 1-6,text,true,,1361,583,10,10,https://dummyjson.com/auth/products/23,366,0,151
+1766503874532,392,Get All Products,200,OK,Principal 1-9,text,true,,45104,533,10,10,https://dummyjson.com/auth/products,387,0,168
+1766503874525,478,Add a new product,201,Created,Principal 1-11,text,true,,1051,611,10,10,https://dummyjson.com/auth/products/add,476,0,314
+1766503874604,394,Get All Products,200,OK,Principal 1-10,text,true,,45122,533,10,10,https://dummyjson.com/auth/products,381,0,155
+1766503874670,365,Update a product partial,200,OK,Principal 1-7,text,true,,1504,582,10,10,https://dummyjson.com/auth/products/5,364,0,153
+1766503874700,362,Get current auth user,200,OK,Principal 1-14,text,true,,2443,527,10,10,https://dummyjson.com/auth/me,360,0,145
+1766503874712,378,Update a product partial,200,OK,Principal 1-8,text,true,,1490,582,10,10,https://dummyjson.com/auth/products/5,371,0,158
+1766503874676,413,Auth,200,OK,Principal 1-15,text,true,,2858,261,10,10,https://dummyjson.com/auth/login,410,0,188
+1766503874888,397,Limit and skip products,200,OK,Principal 1-13,text,true,,1601,571,10,10,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,396,0,178
+1766503874893,431,Delete a product,200,OK,Principal 1-6,text,true,,2369,558,10,10,https://dummyjson.com/auth/products/23,429,0,209
+1766503875008,404,Update a product,200,OK,Principal 1-10,text,true,,1412,611,9,9,https://dummyjson.com/auth/products/25,402,0,184
+1766503874929,496,Update a product,200,OK,Principal 1-9,text,true,,1398,611,9,9,https://dummyjson.com/auth/products/20,495,0,323
+1766503875063,367,Limit and skip products,200,OK,Principal 1-14,text,true,,1583,571,9,9,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,365,0,149
+1766503875036,420,Delete a product,200,OK,Principal 1-7,text,true,,2524,557,9,9,https://dummyjson.com/auth/products/5,419,0,201
+1766503875092,375,Get current auth user,200,OK,Principal 1-15,text,true,,2437,527,8,8,https://dummyjson.com/auth/me,374,0,156
+1766503875097,474,Delete a product,200,OK,Principal 1-8,text,true,,2510,557,8,8,https://dummyjson.com/auth/products/5,470,0,314
+1766503875005,596,Get All Products,200,OK,Principal 1-11,text,true,,45117,533,7,7,https://dummyjson.com/auth/products,550,0,327
+1766503875286,370,Add a new product,201,Created,Principal 1-13,text,true,,1047,611,7,7,https://dummyjson.com/auth/products/add,368,0,154
+1766503875431,358,Add a new product,201,Created,Principal 1-14,text,true,,1049,611,7,7,https://dummyjson.com/auth/products/add,357,0,139
+1766503875431,364,Update a product partial,200,OK,Principal 1-9,text,true,,1396,583,7,7,https://dummyjson.com/auth/products/20,362,0,148
+1766503875414,385,Update a product partial,200,OK,Principal 1-10,text,true,,1411,583,7,7,https://dummyjson.com/auth/products/25,383,0,163
+1766503875468,493,Limit and skip products,200,OK,Principal 1-15,text,true,,1586,571,7,7,https://dummyjson.com/auth/products?limit=10&skip=10&select=title%2Cprice,492,0,321
+1766503875657,375,Get All Products,200,OK,Principal 1-13,text,true,,45112,533,7,7,https://dummyjson.com/auth/products,370,0,147
+1766503875604,482,Update a product,200,OK,Principal 1-11,text,true,,1511,610,7,7,https://dummyjson.com/auth/products/3,481,0,318
+1766503875797,352,Delete a product,200,OK,Principal 1-9,text,true,,2450,558,7,7,https://dummyjson.com/auth/products/20,350,0,134
+1766503875801,359,Delete a product,200,OK,Principal 1-10,text,true,,2428,558,6,6,https://dummyjson.com/auth/products/25,357,0,141
+1766503875790,541,Get All Products,200,OK,Principal 1-14,text,true,,45115,533,5,5,https://dummyjson.com/auth/products,497,0,322
+1766503875962,374,Add a new product,201,Created,Principal 1-15,text,true,,1053,611,5,5,https://dummyjson.com/auth/products/add,373,0,153
+1766503876037,358,Update a product,200,OK,Principal 1-13,text,true,,1545,610,5,5,https://dummyjson.com/auth/products/2,357,0,144
+1766503876087,504,Update a product partial,200,OK,Principal 1-11,text,true,,1513,582,5,5,https://dummyjson.com/auth/products/3,503,0,326
+1766503876333,368,Update a product,200,OK,Principal 1-14,text,true,,1664,610,5,5,https://dummyjson.com/auth/products/6,368,0,147
+1766503876396,349,Update a product partial,200,OK,Principal 1-13,text,true,,1562,582,5,5,https://dummyjson.com/auth/products/2,349,0,135
+1766503876337,422,Get All Products,200,OK,Principal 1-15,text,true,,45122,533,5,5,https://dummyjson.com/auth/products,402,0,183
+1766503876592,396,Delete a product,200,OK,Principal 1-11,text,true,,2551,557,5,5,https://dummyjson.com/auth/products/3,394,0,179
+1766503876702,410,Update a product partial,200,OK,Principal 1-14,text,true,,1669,582,4,4,https://dummyjson.com/auth/products/6,408,0,184
+1766503876762,360,Update a product,200,OK,Principal 1-15,text,true,,1397,611,4,4,https://dummyjson.com/auth/products/22,359,0,145
+1766503876746,473,Delete a product,200,OK,Principal 1-13,text,true,,2588,557,4,4,https://dummyjson.com/auth/products/2,472,0,312
+1766503877122,350,Update a product partial,200,OK,Principal 1-15,text,true,,1397,583,3,3,https://dummyjson.com/auth/products/22,349,0,138
+1766503877114,358,Delete a product,200,OK,Principal 1-14,text,true,,2692,557,3,3,https://dummyjson.com/auth/products/6,357,0,143
+1766503877474,356,Delete a product,200,OK,Principal 1-15,text,true,,2431,558,2,2,https://dummyjson.com/auth/products/22,354,0,139
+1766503874870,3388,Add a new product,201,Created,Principal 1-12,text,false,"The operation lasted too long: It took 3,388 milliseconds, but should not have lasted longer than 1,500 milliseconds.",1043,611,1,1,https://dummyjson.com/auth/products/add,3387,0,3172
+1766503878262,438,Get All Products,200,OK,Principal 1-12,text,true,,45112,533,1,1,https://dummyjson.com/auth/products,413,0,191
+1766503878703,388,Update a product,200,OK,Principal 1-12,text,true,,1414,611,1,1,https://dummyjson.com/auth/products/25,387,0,173
+1766503879092,369,Update a product partial,200,OK,Principal 1-12,text,true,,1417,583,1,1,https://dummyjson.com/auth/products/25,366,0,145
+1766503879463,419,Delete a product,200,OK,Principal 1-12,text,true,,2436,558,1,1,https://dummyjson.com/auth/products/25,417,0,192

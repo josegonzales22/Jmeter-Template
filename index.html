@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargando Reporte de Pruebas...</title>
+    <style>
+        body { 
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .loader { text-align: center; }
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-left-color: #09f;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="spinner"></div>
+        <p id="status">Buscando el último reporte...</p>
+    </div>
+
+    <script>
+        const USER = "josegonzales22";
+        const REPO = "Jmeter-Template";
+        const FOLDER = "reports";
+
+        const TIMESTAMP_REGEX = /(\d{8}_\d{6})/;
+
+        function parseTimestamp(name) {
+            const match = name.match(TIMESTAMP_REGEX);
+            if (!match) return null;
+
+            const raw = match[1];
+            const [datePart, timePart] = raw.split("_");
+
+            const year = datePart.slice(0, 4);
+            const month = datePart.slice(4, 6);
+            const day = datePart.slice(6, 8);
+            const hour = timePart.slice(0, 2);
+            const min = timePart.slice(2, 4);
+            const sec = timePart.slice(4, 6);
+
+            return new Date(`${year}-${month}-${day}T${hour}:${min}:${sec}`);
+        }
+
+        async function buscarUltimoReporte() {
+            const statusText = document.getElementById("status");
+
+            try {
+                const response = await fetch(
+                    `https://api.github.com/repos/${USER}/${REPO}/contents/${FOLDER}`
+                );
+
+                if (!response.ok) throw new Error("No se pudo acceder a /reports");
+
+                const items = await response.json();
+
+                const carpetas = items.filter(i => i.type === "dir");
+
+                if (carpetas.length === 0) {
+                    statusText.textContent = "No hay carpetas dentro de /reports.";
+                    return;
+                }
+
+                // carpetas con timestamp
+                const conTimestamp = carpetas
+                    .map(c => ({ 
+                        ...c, 
+                        timestamp: parseTimestamp(c.name) 
+                    }))
+                    .filter(c => c.timestamp);
+
+                let carpetaElegida;
+
+                if (conTimestamp.length > 0) {
+                    // ordenar y tomar la más reciente
+                    conTimestamp.sort((a, b) => b.timestamp - a.timestamp);
+                    carpetaElegida = conTimestamp[0];
+                    statusText.textContent = "Carpeta con timestamp encontrada. Entrando...";
+                } else {
+                    // fallback: usar la primera carpeta encontrada (alfabéticamente)
+                    carpetas.sort((a, b) => a.name.localeCompare(b.name));
+                    carpetaElegida = carpetas[0];
+                    statusText.textContent = "Sin timestamp. Usando la primera carpeta...";
+                }
+
+                // ahora entrar a esa carpeta y buscar index.html
+                const carpetaResponse = await fetch(carpetaElegida.url);
+                if (!carpetaResponse.ok)
+                    throw new Error("No se pudo leer la carpeta seleccionada.");
+
+                const contenidoCarpeta = await carpetaResponse.json();
+
+                const indexFile = contenidoCarpeta.find(
+                    f => f.name.toLowerCase() === "index.html"
+                );
+
+                if (!indexFile) {
+                    statusText.textContent = `No se encontró index.html dentro de ${carpetaElegida.name}`;
+                    return;
+                }
+
+                // redirigir al index.html
+                window.location.href = indexFile.path;
+
+            } catch (err) {
+                console.error(err);
+                statusText.innerHTML =
+                    `Error: ${err.message}<br><small>Verifica que el repo sea público.</small>`;
+            }
+        }
+
+        buscarUltimoReporte();
+    </script>
+</body>
+</html>
